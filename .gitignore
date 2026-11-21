@@ -1,0 +1,7 @@
+# certs.sh が作る証明書と秘密鍵
+certs/
+certs-*/
+*.key
+# アカウントIDを含むCDKのコンテキスト
+cdk/cdk.context.json
+.DS_Store
