@@ -120,7 +120,7 @@ export class IdpStack extends cdk.Stack {
       ttl: cdk.Duration.seconds(60),
     });
 
-    // Inbound認可を試すGatewayのサービスロール（ターゲットは登録しない）
+    // インバウンド認証を試すGatewayのサービスロール（ターゲットは登録しない）
     const gatewayRole = new iam.Role(this, 'GatewayRole', {
       assumedBy: new iam.ServicePrincipal('bedrock-agentcore.amazonaws.com', {
         conditions: {
